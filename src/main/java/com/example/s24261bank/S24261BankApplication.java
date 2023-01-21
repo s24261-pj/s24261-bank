@@ -15,10 +15,10 @@ public class S24261BankApplication {
 		userService.registerUser("Tadeusz", 8000);
 		System.out.println(userService.getUserList());
 
-		TransactionConfirmation removeMoneyTransaction = transactionService.addMoney("1", -500);
+		TransactionConfirmation removeMoneyTransaction = transactionService.addMoney("1", 500);
 		System.out.println(removeMoneyTransaction);
 
-		TransactionConfirmation addMoneyTransaction = transactionService.removeMoney("1", -300);
+		TransactionConfirmation addMoneyTransaction = transactionService.removeMoney("1", 300);
 		System.out.println(addMoneyTransaction);
 
 		User userByUuid = userService.getUserByUuid("1");
